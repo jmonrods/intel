@@ -7,7 +7,7 @@ clean:
 	rm ./work/ -rf
 	rm ./transcript -f
 
-cpu: clean
+cpu_tb: clean
 	vlib work
 	vmap work work
 	vlog -sv ./riscv/cpu_tb.sv ./riscv/cpu.sv
