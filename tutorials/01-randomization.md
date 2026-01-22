@@ -204,7 +204,7 @@ Edit the cpu.sv file and comment the whole module declaration for the imem modul
 Then, edit the Makefile and add a new target with the following commands:
 
 ```makefile
-cpu_tb_v01: clean
+cpu_v01: clean
 	vlib work
 	vmap work work
 	vlog -sv ./riscv_v01/cpu_tb.sv ./riscv_v01/imem.sv ./riscv_v01/cpu.sv
@@ -214,7 +214,7 @@ cpu_tb_v01: clean
 Run the testbench:
 
 ```bash
-make cpu_tb_v01
+make cpu_v01
 ```
 
 If you want, you can give more time to the simulation by modifying the testbench too. Just add more time inside the `initial` block.
@@ -226,10 +226,10 @@ This runs with the default seed, you can pick a specific seed by adding it to th
 
 Now it is time to add coverage collection to our randomized test.
 
-In order to do this, just add another Makefile target:
+In order to do this, just modify the Makefile target:
 
 ```makefile
-cpu_tb_v01_cov: clean
+cpu_v01: clean
 	vlib work
 	vmap work work
 	vlog +cover -sv ./riscv_v01/cpu_tb.sv ./riscv_v01/cpu.sv ./riscv_v01/imem.sv

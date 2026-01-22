@@ -494,7 +494,7 @@ endclass
 Modify the Makefile of the project and add the following target:
 
 ```makefile
-riscv_v03: clean
+cpu_v03: clean
 	vlib work
 	vmap work work
 	vlog -sv \
@@ -514,7 +514,7 @@ Just hit the make command!
 
 ```bash
 cd ~/Work/uvmcc
-make riscv_v03
+make cpu_v03
 ```
 
 You should see the simulation output with random instructions, coverage, and the PASS/FAIL results of the scoreboard.
@@ -565,7 +565,7 @@ endclass
 Modify the Makefile:
 
 ```makefile
-riscv_v03: clean
+cpu_v03: clean
 	vlib work
 	vmap work work
 	vlog -sv \

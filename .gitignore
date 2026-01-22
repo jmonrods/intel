@@ -1,0 +1,8 @@
+work/
+modelsim.ini
+vsim.wlf
+vsim.dbg
+vsim_stacktrace.vstf
+transcript
+coverage.ucdb
+coverage.txt

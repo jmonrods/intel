@@ -35,6 +35,6 @@ cat Makefile
 And run the directed testbench:
 
 ```bash
-make cpu_tb
+make cpu_v00
 ```
 
