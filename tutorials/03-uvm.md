@@ -4,7 +4,7 @@ Now let's use UVM. Why? Because in the previous practice, if we ever want to cre
 
 Another issue with the copy-pasting approach is that we must compile everything, every time we want to run the test. So, imagine compilation needs 5 minutes, and we need 1000 different tests. That's 3.5 days of non-stop, compilation time.
 
-The most efficient way to make more tests as you go, is to add them as extensions of an UVM class. In fact, let's make everything into UVM classes, to keep them standardized, even the BFM!
+The most efficient way to make more tests as you go, is to add them as extensions of an UVM class. In fact, let's make everything into UVM classes, to keep them standardized.
 
 ## Setting up
 

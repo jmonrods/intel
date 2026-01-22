@@ -20,7 +20,7 @@ Copy the whole `riscv` original folder and label it as `riscv_v02`.
 ```bash
 cd ~/Work/uvmcc
 cp riscv riscv_v02
-cd riscv_02
+cd riscv_v02
 ```
 
 Now, create a file `cpu_bfm.sv` and add the following code:
