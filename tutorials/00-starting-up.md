@@ -1,6 +1,12 @@
 # 00: Starting up
 
-Log-in to the RHEL server and make an empty folder in your home:
+Log-in to the RHEL server and source the startup file for Siemens tools:
+
+```bash
+source ~/start_mentor.sh
+```
+
+Make an empty folder in your home:
 
 ```bash
 cd ~
@@ -24,12 +30,6 @@ Review what's in the Makefile:
 
 ```bash
 cat Makefile
-```
-
-Source the startup file for Siemens tools:
-
-```bash
-source ~/start_mentor.sh
 ```
 
 And run the directed testbench:
